@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!--  PUUTTUU
+    Puuttuu vielä mediaqueryt style.css
+    Tekstiä pitää vielä saada keskitettyä.
+    Värivalinnat,fontit yms. puuttuu.
+    Tilankäyttö, padding,margin yms pitää katsoa tarkemmin.
+    -->
+      
+    <!-- Flex-box alkaa tästä-->
+    <div class="flex-box">
+      <form action="" id="customerform">
+        <header><h1>Asiakaspalaute Otsikko</h1></header>
+        <div class="roomnumber">
+          <input type="text" id="roomnum" placeholder="Huoneistonne numero?" />
+        </div>
+
+        <div class="ask1">
+          <p>Suosittelisitteko Huoneistohotelli Lietsua ystävillenne?</p>
+          <label
+            ><input
+              type="radio"
+              id="button"
+              name="ask"
+              value="kylla"
+            />Kyllä</label
+          >
+
+          <label
+            ><input type="radio" id="button" name="ask" value="en" />En</label
+          >
+        </div>
+        <div class="ask2">
+          <p>Oletteko havainneet huoneistossa puutteita?</p>
+          <label
+            ><input type="radio" id="button" name="ask" value="en" />En</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="button"
+              name="ask"
+              value="kylla"
+            />Kyllä</label
+          >
+          <p style="font-weight: bold;">
+            Tähän tarvitaan Javascript toiminnallisuus, jossa avataan checkbox
+            group kun painetaan *kyllä*
+          </p>
+        
+         <!-- Flex-box alkaa tästä-->
+         <p style="font-weight: bold;">
+                Text area pitää vielä katsoa
+              </p>
+        
+     
+
+        <textarea
+          placeholder="Haluaisitteko kertoa meille jotain muuta tai kysyä meiltä jotain? Vastaamme teille mahdollisimman pian."
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>

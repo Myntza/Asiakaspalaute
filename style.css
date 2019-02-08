@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-size: 18px;
+  background-color: pink;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/* Asiakas formi */
+/*
+#customerform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin:40px auto 40px auto;
+  padding: 25px 25px 25px 25px;
+}
+*/
+/*  Huoneistonne numero? */
+#roomnum {
+  height: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+/*   Suosittelisitteko Huoneistohotelli Lietsua ystävillenne? */
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 450px;
+  padding: 10px 10px 10px 10px;
+  margin: 40px auto 40px auto;
+  border-radius: 10px;
+  text-align-last: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+
+  /*Napit pitää saada tekstin alle */
+  /* */
+  /* Tyhjentää inputin kun painetaan.*/
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#button {
+  align-items: center;
+}
+#textarea {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+textarea {
+  width: 95%;
+  height: 100px;
+  /*Ei välttämättä paras ratkaisu tähän*/
+  text-align: start;
+  text-align-last: start;
+  resize: none;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
