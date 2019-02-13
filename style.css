@@ -1,9 +1,16 @@
 body {
   margin: 0;
   font-size: 18px;
-  background-color: pink;
+  background-image: url("bokeh.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+
+
+
 /* Asiakas formi */
 /*
 #customerform {
@@ -16,14 +23,14 @@ body {
   margin:40px auto 40px auto;
   padding: 25px 25px 25px 25px;
 
-  Kassu jyrää
+
   
 }
 */
 /*  Huoneistonne numero? */
 #roomnum {
   height: 24px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 /*   Suosittelisitteko Huoneistohotelli Lietsua ystävillenne? */
@@ -32,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  
   max-width: 450px;
   padding: 10px 10px 10px 10px;
   margin: 40px auto 40px auto;
