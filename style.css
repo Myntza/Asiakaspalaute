@@ -1,7 +1,10 @@
 body {
   margin: 0;
   font-size: 18px;
-  background-image: linear-gradient(white, rgb(160, 160, 40));
+  background-image: url("bokeh.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
   font-family: "Roboto Condensed", sans-serif;
 }
 /* Asiakas formi */
@@ -29,7 +32,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   max-width: 450px;
   padding: 10px 10px 10px 10px;
   margin: 40px auto 40px auto;
