@@ -1,16 +1,8 @@
 body {
   margin: 0;
   font-size: 18px;
-  background-image: url("bokeh.png");
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: 100% 100%;
   font-family: "Roboto Condensed", sans-serif;
 }
-
-
-
-
 /* Asiakas formi */
 /*
 #customerform {
@@ -22,15 +14,12 @@ body {
   flex-shrink: 1;
   margin:40px auto 40px auto;
   padding: 25px 25px 25px 25px;
-
-
-  
 }
 */
 /*  Huoneistonne numero? */
 #roomnum {
   height: 24px;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 }
 /*   Suosittelisitteko Huoneistohotelli Lietsua ystävillenne? */
@@ -39,7 +28,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  height: 100%;
   max-width: 450px;
   padding: 10px 10px 10px 10px;
   margin: 40px auto 40px auto;
@@ -74,4 +63,10 @@ textarea {
 }
 textarea:focus::-webkit-input-placeholder {
   color: transparent;
+}
+#checkboxes{
+  margin:15px auto 10px auto;
+  
+
+align-items:center;;
 }

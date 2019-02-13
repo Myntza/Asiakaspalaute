@@ -8,13 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <title>Document</title>
   </head>
-
-  
-
   <body>
-
-    
-    
 
     <!--  PUUTTUU
     Puuttuu vielä mediaqueryt style.css
@@ -29,7 +23,7 @@
         <header><h1>Asiakaspalaute Otsikko</h1></header>
         <div class="roomnumber">
           <input type="text" id="roomnum" placeholder="Huoneistonne numero?" />
-        </div>
+        </div>  	      
 
         <div class="ask1">
           <p>Suosittelisitteko Huoneistohotelli Lietsua ystävillenne?</p>
@@ -37,32 +31,51 @@
             ><input
               type="radio"
               id="button"
-              name="ask"
+              name="suositus"
               value="kylla"
             />Kyllä</label
           >
 
           <label
-            ><input type="radio" id="button" name="ask" value="en" />En</label
+            ><input type="radio" id="button" name="suositus" value="en" />En</label
           >
         </div>
         <div class="ask2">
           <p>Oletteko havainneet huoneistossa puutteita?</p>
           <label
-            ><input type="radio" id="button" name="ask" value="en" />En</label
+            ><input type="radio" id="button" name="puuttuu" value="en" />En</label
           >
           <label
             ><input
               type="radio"
-              id="button"
-              name="ask"
+              id="nappi"
+              name="puuttuu"
               value="kylla"
             />Kyllä</label
           >
-          <p style="font-weight: bold;">
-            Tähän tarvitaan Javascript toiminnallisuus, jossa avataan checkbox
-            group kun painetaan *kyllä*
-          </p>
+          <div id="checkboxes" style="display:none;">
+            <div>
+              <input type="checkbox" id="coding" name="interest" value="coding">
+              <label for="coding">wc-paperi</label>
+            </div>
+            <div>
+              <input type="checkbox" id="music" name="interest" value="music">
+              <label for="music">pyyhkeet tai liinavaatteet</label>
+            </div>
+            <div>
+              <input type="checkbox" id="art" name="interest" value="art">
+              <label for="art"> keittiötarvikkeet ja astiat</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sports" name="interest" value="sports">
+              <label for="sports">huoneiston lämpötila</label>
+            </div>
+            <div>
+              <input type="checkbox" id="cooking" name="interest" value="cooking">
+              <label for="cooking">huoneiston siisteys</label>
+            </div>
+</div>
+
         
          <!-- Flex-box alkaa tästä-->
          <p style="font-weight: bold;">
@@ -74,8 +87,10 @@
         <textarea
           placeholder="Haluaisitteko kertoa meille jotain muuta tai kysyä meiltä jotain? Vastaamme teille mahdollisimman pian."
         ></textarea>
+        <input type="submit" value="Submit">
       </form>
+      
     </div>
+    <script src="index.js"></script>
   </body>
-
 </html>
