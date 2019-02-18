@@ -27,40 +27,62 @@
 
 <div class="container">
 
-<h1>Huoneistohotelli Lietsun palautekysely</h1>
 
+<!--
+
+
+  Muokattu otsikko formin sisälle ja viilaitu tyylejä
+  Lisätty form groupit bootstrap documentaation mukaisesti oikein. 
+  Lisätty myös formin button formin sisään
+  Vaihdettu kieltä varten myös (ei ja kyl vaihettu koodista yes ja no) :D
+
+
+-->
     <form>
+        <h1>Huoneistohotelli Lietsun palautekysely</h1>
+
         <div class="form-group col-lg">
           <label for="email">Huoneen numero</label>
           <input type="text" class="form-control" id="roomnumber" placeholder="Anna huoneen numero">
+          <small id="roomNumberHelp" class="form-text text-muted">Anna huoneen numero</small>
+        </div>
 
-
+        <div class="form-group col-lg">
             <label for="email">Sähköposti</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Anna sähköposti">
             <small id="emailHelp" class="form-text text-muted">Sähköposti mahdollista yhteydenottoa varten!</small>
-         
+        </div> 
 
-          
+        <div class="form-group col-lg"> 
                 <label class="my-1 mr-2" for="select">Voisitko suositella hotellia muille?</label>
                 <select class="custom-select my-1 mr-sm-2" id="select">
                   <option selected>Kyllä</option>
                   <option value="no">En</option>
                 </select>
-           
+        </div>    
 
-                
+        <div class="form-group col-lg">         
                 <label class="my-1 mr-2" for="btn-group">Oletko havainnut huoneessasi puutteita?</label>
               
-                <div class="" >
-                  <label class="radio-inline"><input type="radio" name="option" id="ei" >Ei </label>
-                  <label class="radio-inline"><input type="radio" name="option" id="kyl">Kyllä </label>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="yes">Kyllä
+                    </label>
+                </div>
+                
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" id="no">En
+                    </label>
                 </div>
 
+        </div>
 
+        <div class="form-group col-lg"> 
             <!-- If selected Yes this come visible-->
             <div id="needs"style="display:none;">
 
-             <label class="needs">Mihin puutteet ovat liittyneet?</label>
+            <label class="needs">Mihin puutteet ovat liittyneet?</label>
             <div class="checkbox">
               <label><input type="checkbox" id="toiletpaper" class="mr-1" value="toiletpaper">WC-paperi</label>
             </div>
@@ -80,13 +102,19 @@
             <div class="checkbox">
                   <label><input type="checkbox" id="cleaning" class="mr-1" value="cleaning">Huoneiston siisteys</label>
             </div>
-
           </div>
+          </div>
+
+          <div class="form-group col-lg"> 
             <label for="text">Anna vapaamuotoista palautetta</label>
             <textarea class="form-control" id="text" rows="3" placeholder="Haluaisitteko kertoa meille jotain muuta tai kysyä meiltä jotain? Vastaamme teille mahdollisimman pian!"></textarea>
           </div>
+
+        <div class="form-group col-lg"> 
         
         <button type="submit" class="btn btn-dark">Lähetä palaute</button>
+
+        </div>
       </form>
 </div>
 <script src="index.js"></script>
