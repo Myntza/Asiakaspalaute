@@ -1,75 +1,39 @@
-body {
-  margin: 0;
-  font-size: 18px;
-  background-image: url("bokeh.png");
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: 100% 100%;
-  font-family: "Roboto Condensed", sans-serif;
-}
-/* Asiakas formi */
-/*
-#customerform {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin:40px auto 40px auto;
-  padding: 25px 25px 25px 25px;
-}
-*/
-/*  Huoneistonne numero? */
-#roomnum {
-  height: 24px;
-  font-size: 24px;
-  text-align: center;
-}
-/*  s Suosittelisitteko Huoneistohotelli Lietsua ystävillenne? */
-.flex-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 450px;
-  padding: 10px 10px 10px 10px;
-  margin: 40px auto 40px auto;
-  border-radius: 10px;
-  text-align-last: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-wrap: wrap;
 
-  /*Napit pitää saada tekstin alle */
-  /* */
-  /* Tyhjentää inputin kun painetaan.*/
-}
+body { 
+  background: url(bokeh.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-#button {
-  align-items: center;
-}
-#textarea {
-  flex-shrink: 1;
-  flex-grow: 1;
-}
-textarea {
-  width: 95%;
-  height: 100px;
-  /*Ei välttämättä paras ratkaisu tähän*/
-  text-align: start;
-  text-align-last: start;
-  resize: none;
-}
-textarea:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-#checkboxes{
-  margin:15px auto 10px auto;
   
+}
 
-align-items:center;;
+h1{
+
+text-align: center;
+font-family: "Roboto Condensed", sans-serif;
+font-weight: bold;
+
+}
+
+label{
+
+color:black;
+font-weight: bold;
+}
+
+#puutteet{
+
+
+
+}
+
+form{
+padding-left:10px;
+border-radius: 25px;
+color:black;
+background-color: rgb(255, 255, 255);opacity:1 !important;
+padding-top: 40px;
+padding-bottom: 40px;
 }
